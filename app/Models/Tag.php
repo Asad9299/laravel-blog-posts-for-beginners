@@ -12,8 +12,12 @@ class Tag extends Model
 
     protected $fillable = ['name'];
 
-    public function list() {
-        return $this->latest()->paginate(1);
+    public function list($doPaginate) {
+        if($doPaginate) {
+            return self::latest()->paginate(1);
+        } else {
+            return self::latest()->get();
+        }
     }
 
     public function add($tag) {

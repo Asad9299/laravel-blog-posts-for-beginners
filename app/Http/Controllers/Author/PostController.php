@@ -32,10 +32,10 @@ class PostController extends Controller
     public function create()
     {
         $tags = new Tag();
-        $tags = $tags->list();
+        $tags = $tags->list(false);
 
         $categories = new Category();
-        $categories = $categories->list();
+        $categories = $categories->list(false);
 
         return view('author.posts.create', compact('tags', 'categories'));
     }
@@ -93,7 +93,7 @@ class PostController extends Controller
     public function edit(post $post)
     {
         $tags = new Tag();
-        $tags = $tags->list();
+        $tags = $tags->list(false);
         return view('author.posts.edit', compact('post', 'tags'));
     }
 

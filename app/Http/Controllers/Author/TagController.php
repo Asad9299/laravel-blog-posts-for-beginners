@@ -17,7 +17,7 @@ class TagController extends Controller
     public function index()
     {
         $tags = new Tag();
-        $tags = $tags->list();
+        $tags = $tags->list(true);
         return view('author.tags.index', compact('tags'));
     }
 

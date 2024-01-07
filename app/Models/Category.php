@@ -18,8 +18,12 @@ class Category extends Model
         return self::create($category);
     }
 
-    public function list() {
-        return self::latest()->paginate(1);
+    public function list($doPaginate) {
+        if($doPaginate) {
+            return self::latest()->paginate(1);
+        } else {
+            return self::latest()->get();
+        }
     }
 
     public function edit($category) {

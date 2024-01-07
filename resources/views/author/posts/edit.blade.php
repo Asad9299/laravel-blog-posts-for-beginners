@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary fw-bold">Create</button>
+                    <button type="submit" class="btn btn-primary fw-bold">Update</button>
                     <a href="{{ route('author.posts.index') }}" class="btn btn-secondary fw-bold">Cancel</a>
                 </div>
             </form>

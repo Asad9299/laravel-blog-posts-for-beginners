@@ -17,7 +17,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = new Category();
-        $categories = $categories->list();
+        $categories = $categories->list(true);
         return view('author.categories.index', compact('categories'));
     }
 
