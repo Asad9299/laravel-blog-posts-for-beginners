@@ -2,6 +2,32 @@
 
 Welcome to the Laravel Blog Posts for Beginners repository! This project is designed to help beginners get started with Laravel and build a simple blog application. Follow the steps below to set up the project and explore its features.
 
+## Topics
+
+1. **Resource Routes:** Learn how to define and use resource routes in Laravel.
+
+2. **Resource Controllers:** Explore the use of resource controllers to handle CRUD operations efficiently.
+
+3. **Implicit Route Model Binding:** Understand and implement implicit route model binding for cleaner controller methods.
+
+4. **Accessors:** Learn how to use accessors to manipulate attribute values in your Eloquent models.
+
+5. **Storage Public Disk for File Uploads:** Explore how to use Laravel's storage system and the public disk for handling file uploads.
+
+6. **One to One Relationship (Inverse):** Implement and understand the inverse side of a one-to-one Eloquent relationship.
+
+7. **Many to Many Relationship:** Dive into the concept of many-to-many relationships in Laravel Eloquent.
+
+8. **Eager Loading (Solution to N+1 Query Problem):** Solve the N+1 query problem by implementing eager loading for efficient database queries.
+
+9. **Route View:** Learn how to route directly to a view without a controller.
+
+10. **Route Redirect:** Understand and implement route redirection for a better user experience.
+
+11. **Bootstrap UI Package for Login:** Integrate Bootstrap UI package to enhance the visual appearance of the login functionality.
+
+12. **Bootstrap Pagination:** Implement Bootstrap pagination for better navigation through paginated data.
+
 ## Prerequisites
 Before you begin, make sure you have the following installed on your system:
 
