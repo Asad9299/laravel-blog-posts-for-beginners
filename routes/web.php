@@ -32,9 +32,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::redirect('/home', 'author/posts');
 
 Route::group(['middleware'=>'auth', 'prefix'=>'author', 'as'=>'author.'], function() {
+    # Routes for Managing the Categories
     Route::resource('categories', CategoryController::class)->except('show');
+
+    # Routes for Managing the Tags
     Route::resource('tags', TagController::class)->except('show');
+
+    # Routes for Managing the Posts
     Route::resource('posts', AuthorPostController::class);
 });
 
+# Routes for showing and Listing Posts to the End Users
 Route::resource('posts', PostController::class)->only(['index', 'show']);
